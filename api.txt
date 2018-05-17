@@ -1,0 +1,19 @@
+一、仓库
+1. 获取前30个最热门仓库
+https://api.github.com/search/repositories?q=stars&sort=stars（这个数据不真实，总的话就排序吧）
+2.每个语言最热门仓库（按starts数）
+https://api.github.com/search/repositories?q=language:C%2B%2B&sort=stars
+
+二、语言
+1.获取每个语言的仓库数量（上面第二个的json数据有这个数值）
+2.获取每个语言的用户数量（下面的第一个json数据有这个数值）
+
+三、用户
+1.获取前30个最热门的用户（按followers数）
+（从下面的数据进行排序）
+2.每个语言前30个最热门的用户（按followers数）
+https://api.github.com/search/users?q=language:python&sort=followers（具体数目未知，待查）
+
+四、地区
+1.每个地区的用户数量
+https://api.github.com/search/users?q=location:Guangdong
