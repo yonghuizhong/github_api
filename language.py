@@ -40,8 +40,8 @@ def get_language(str_type):
     # SQL 插入语句，注意字符串还要加单括号
     sql2 = """INSERT INTO language(users,
              repositories, type)
-             VALUES (%d, %d, '%s')"""
-    cursor2.execute(sql2 % (user_nums, rep_nums, str_type))
+             VALUES (%s, %s, %s)"""   # 不管什么类型，统一使用%s作为占位符
+    cursor2.execute(sql2, (user_nums, rep_nums, str_type))
     con2.commit()  # 注意：插入是有提交这个语句的
     con2.close()
 
