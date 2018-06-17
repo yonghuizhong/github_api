@@ -7,7 +7,7 @@ from requests.exceptions import ReadTimeout
 
 def getFollowers(url):
     headers = {
-        "Authorization": 'token 27f8fabbe550fd6dd42098c118628ab9ff04e0e2'
+        "Authorization": 'token 放入自己的token'
     }
     res = requests.get(url, headers=headers).json()
     id = res.get('id')
