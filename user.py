@@ -66,6 +66,10 @@ def myfun(language):
             name = it.get('login')
             url = it.get('html_url')
             urls.append(it.get('url'))
+            if language == 'C%2B%2B':
+                language = 'C++'
+            if language == 'C%23':
+                language = 'C#'
             print(id2, name, url, language)
             try:
                 cursor2.execute(sql2, (id2, name, url, language))
