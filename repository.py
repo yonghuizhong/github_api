@@ -6,7 +6,7 @@ from requests.exceptions import ReadTimeout
 
 def myfun(language):
     headers = {
-        "Authorization": 'token 27f8fabbe550fd6dd42098c118628ab9ff04e0e2'
+        "Authorization": 'token 放入自己的token'
     }
     url = 'https://api.github.com/search/repositories?q=language:{}&sort=stars'.format(language)
     print(url)
