@@ -8,7 +8,7 @@ import mysql.connector
 def get_area(area, area_chinese):
     time.sleep(random.uniform(1, 2))
     headers = {
-        "Authorization": 'token 27f8fabbe550fd6dd42098c118628ab9ff04e0e2'
+        "Authorization": 'token 放入自己的token'
     }
     url = 'https://api.github.com/search/users?q=location:{}'.format(area)
     url_cn = 'https://api.github.com/search/users?q=location:{}'.format(area_chinese)
